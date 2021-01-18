@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/06fd106d7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="weather.css">
+
+    <title>Don's weather</title>
+</head>
+<body>
+    <div class="navbar-header navbar-center">
+        <nav class="navbar navbar-dark bg-dark" id="Bar">
+            <span class="navbar-brand mb-0 h1" id="myNav">Weather Dashboard</span>
+        </nav>
+    </div>
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-3 px-0 ">
+                <div id="sideBar">
+                    <form class="form-inline">
+                        <div id="ogSearch">
+                        <input class="form-control" id="city" type="search" placeholder="Search" aria-label="Search">
+                        <button class="myBtn btn btn-success btn-sm" type="submit"><i id="searchButton" class="fa fa-coffee"></i></button>
+                        </div>
+                    </form>
+                    <div class="buttons btn-group-vertical vertButtons"></div>
+                </div>
+            </div>
+
+
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="weatherDisplay"></div>
+                    </div>
+
+                    <div class="col-12 parentFive">
+                        <h3>5 Day Forecast</h3>
+                        <div id="fiveDay"></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script src="weather.js"></script>
+    
+</body>
+</html>
