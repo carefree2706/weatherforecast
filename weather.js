@@ -158,27 +158,26 @@ function currentWeather(countryName) {
 function getFiveDay(countryName) {
     //call for 5 days forecast
     var apiKey = "7b50a0572cb4f6218adafc0e8349cf51";
-    var fiveDayUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + countryName + "&appid=" + apiKey;
-    console.log(fiveDayUrl)
+    var fiveDayUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + countryName + "&appid=" + apiKey;
+    
     $.ajax({
         url: fiveDayUrl,
         method: "GET"
     }).then(function (response) {
-        console.log(response)
+       
 
         for (var i = 0; i < response.list.length; i++) {
-            var date = moment
-                .unix(response.list[i].dt)
-                .utc()
+            var date = moment(response.list[i].dt,"X"). utcOffset(response.city.timezone)
+               
 
-            if (date.hour() === 3) {
+            if (date.hour() === 15) {
 
                 //writing 5 days forecast information to the page
-                var dayBox = $("<div>").addclass("dayCard")
+                var daysBox = $("<div>").addClass("dayCard")
                 var dateOne = $("<p>")
                 dateOne.addClass("dateOnDay")
                 dateOne.text(date.format("L"));
-                dayBox.append(dateOne);
+                daysBox.append(dateOne);
 
                 var iconID = response.list[i].weather[0].icon
                 var iconUrl = "http://openweathermap.org/img/wn/" + iconID + "@2x.png"
@@ -197,7 +196,7 @@ function getFiveDay(countryName) {
                 fiveHumid.text("Humidity: " + response.list[i].main.humidity)
 
                 daysBox.append(fiveIcon, fiveTemp, fiveHumid)
-                $("#fiveDay").append(dayBox)
+                $("#fiveDay").append(daysBox)
             }
         }
     })
