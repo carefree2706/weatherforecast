@@ -51,11 +51,11 @@ $("#searchButton").on("click", function (event) {
 function currentWeather(countryName) {
 
     var apiKey = "7b50a0572cb4f6218adafc0e8349cf51";
-    var urlQuery = "https://api.openweathermap.org/data/2.5/weather?q=" + countryName + "&appid=" + apiKey;
+    var urlQuery = "https://api.openweathermap.org/data/2.5/weather?q=" + countryName +  "&units=metric" +"&appid=" + apiKey;
 
 
     // call to retrieve current weathr information for a new city 
-
+console.log(urlQuery)
     $.ajax({
         url: urlQuery,
         method: "GET"
@@ -90,14 +90,14 @@ function currentWeather(countryName) {
         //converting temp
 
         var tempCon = response.main.temp;
-        var cToFahr = ((tempCon - 273.15) * 1.80 + 32).toFixed(0);
+        
 
         
         //retrieve temp
 
         var tempMain = $("<p>")
         tempMain.addClass("mainData")
-        tempMain.text("Temperature (c): " + cToFahr)
+        tempMain.text("Temperature " + tempCon + "c"  )
         weatherContainer.append(tempMain)
 
         //retrieve humidity
@@ -106,21 +106,21 @@ function currentWeather(countryName) {
 
         var humidityMain = $("<p>")
         humidityMain.addClass("mainData")
-        humidityMain.text("Humidity:" + response.main.humidity)
+        humidityMain.text("Humidity:" + response.main.humidity + "%")
         weatherContainer.append(humidityMain)
 
         //retrieve wind
 
         var windMain = $("<p>")
         windMain.addClass("mainData")
-        windMain.text("Wind: " + response.wind.speed)
+        windMain.text("Wind: " + response.wind.speed + "km/h")
         weatherContainer.append(windMain)
 
         //index query
         var lat = response.coord.lat
         var long = response.coord.lon
 
-        var uvQueryUrl = "https://api.openweathermap.org/data/2.5/uvi?&lat=" + lat + "&lon=" + long + "&appid=" + apiKey;
+        var uvQueryUrl = "https://api.openweathermap.org/data/2.5/uvi?&lat=" + lat + "&lon=" + long +  "&appid=" + apiKey;
 
         //separate call to get UV index for new country
 
@@ -158,7 +158,7 @@ function currentWeather(countryName) {
 function getFiveDay(countryName) {
     //call for 5 days forecast
     var apiKey = "7b50a0572cb4f6218adafc0e8349cf51";
-    var fiveDayUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + countryName + "&appid=" + apiKey;
+    var fiveDayUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + countryName + "&units=metric" +  "&appid=" + apiKey;
     
     $.ajax({
         url: fiveDayUrl,
@@ -182,7 +182,7 @@ function getFiveDay(countryName) {
                 var iconID = response.list[i].weather[0].icon
                 var iconUrl = "http://openweathermap.org/img/wn/" + iconID + "@2x.png"
                 var temp1 = response.list[i].main.temp
-                var cToFahr = ((temp1 - 273.15) * 1.80 + 32).toFixed(0);
+                var cToFahr = (temp1 )
 
 
                 var fiveIcon = $("<img>")
