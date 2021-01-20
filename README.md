@@ -24,10 +24,10 @@ This assignment required the developer to create a weather forecast application 
 
 ## Construct with
 
-[API](https://openweathermap.org/api)
-[Jqurery](https://api.jquery.com)
-[HTM,CSS](https://www.w3schools.com/html/)
-[Javascript](https://www.javascript.com)
+[API](https://openweathermap.org/api),
+[Jqurery](https://api.jquery.com),
+[HTM,CSS](https://www.w3schools.com/html/),
+[Javascript](https://www.javascript.com),
 
 
 
