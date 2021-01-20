@@ -1,6 +1,6 @@
 # weatherforecast
 
-Summary
+## Summary
 
 This assignment required the developer to create a weather forecast application which seek for the current weather and future weather foercast for the city or cosuntry that we key in. The developer utilised the AJAX to attach or hook information through the openweather API and collect/ retrieve information. The application display the folllowing current and future forecast conditions:
 
@@ -13,7 +13,7 @@ This assignment required the developer to create a weather forecast application 
 7. 5 days forecast
 8. Recent search history 
 
-Technologies utilised
+## Technologies utilised
 
 1. JQuery 
 2. momentJs
@@ -22,7 +22,7 @@ Technologies utilised
 3. Javascript
 4. Bootstrap
 
-#H1 Construct with
+## Construct with
 
 [API](https://openweathermap.org/api)
 [Jqurery] (https://api.jquery.com)
