@@ -78,7 +78,7 @@
 }
 .greenOval {
     display: inline-block;  
-    background-color:green;
+    background-color:rgb(167, 228, 167);
 }
 .yellowOval {
     display: inline-block;   
@@ -116,7 +116,7 @@ h3 {
 }
 .dayCard {
     width: 18%;
-    background: #91f1c9;
+    background: #92e2ad;
     border-radius: 25px;
     font-size: 1rem;
     margin-right: 1%;

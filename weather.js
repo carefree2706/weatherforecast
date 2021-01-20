@@ -89,7 +89,7 @@ console.log(urlQuery)
 
         //converting temp
 
-        var tempCon = response.main.temp;
+        var tempCon = response.main.temp.toFixed(1);
         
 
         
@@ -138,12 +138,12 @@ console.log(urlQuery)
             weatherContainer.append(oval)
 
             if (value <= 2) {
-                oval.addClass("lighGreenOval")
-            } else if (value >= 2.1 && value <= 5) {
+                oval.addClass("greenOval")
+            } else if (value >= 1 && value <= 5) {
                 oval.addClass("yellowOval")
-            } else if (value >= 5 && value <= 7) {
+            } else if (value >= 5.1 && value <= 7) {
                 oval.addClass("orangeOval")
-            } else if (value >= 7 && value <= 10) {
+            } else if (value >= 7.1 && value <= 10) {
                 oval.addClass("redOval")
             } else if (value >= 10) {
                 oval.addClass("purpleOval")
@@ -159,7 +159,7 @@ function getFiveDay(countryName) {
     //call for 5 days forecast
     var apiKey = "7b50a0572cb4f6218adafc0e8349cf51";
     var fiveDayUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + countryName + "&units=metric" +  "&appid=" + apiKey;
-    
+    console.log(fiveDayUrl)
     $.ajax({
         url: fiveDayUrl,
         method: "GET"
@@ -181,18 +181,18 @@ function getFiveDay(countryName) {
 
                 var iconID = response.list[i].weather[0].icon
                 var iconUrl = "http://openweathermap.org/img/wn/" + iconID + "@2x.png"
-                var temp1 = response.list[i].main.temp
+                var temp1 = response.list[i].main.temp.toFixed(1) + "c"
                 var cToFahr = (temp1 )
 
 
                 var fiveIcon = $("<img>")
                 var fiveTemp = $("<p>")
                 fiveTemp.addClass("fiveData")
-                var fiveHumid = $("<p>")
+                var fiveHumid = $("<p>" )
                 fiveHumid.addClass("fiveData")
 
                 fiveIcon.attr("src", iconUrl)
-                fiveTemp.text("Temp: " + cToFahr)
+                fiveTemp.text("Temp: " + cToFahr )
                 fiveHumid.text("Humidity: " + response.list[i].main.humidity)
 
                 daysBox.append(fiveIcon, fiveTemp, fiveHumid)
