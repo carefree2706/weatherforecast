@@ -22,7 +22,7 @@ Technologies utilised
 3. Javascript
 4. Bootstrap
 
-
+(H1) construct with
 [API](https://openweathermap.org/api)
 
 https://github.com/carefree2706/weatherforecast/blob/main/assets/weather%20forecast.mov
