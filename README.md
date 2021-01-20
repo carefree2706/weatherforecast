@@ -23,4 +23,6 @@ Technologies utilised
 4. Bootstrap
 
 
+[API](https://openweathermap.org/api)
+
 https://github.com/carefree2706/weatherforecast/blob/main/assets/weather%20forecast.mov
