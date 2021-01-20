@@ -25,7 +25,11 @@ This assignment required the developer to create a weather forecast application 
 ## Construct with
 
 [API](https://openweathermap.org/api)
-[Jqurery] (https://api.jquery.com)
+[Jqurery](https://api.jquery.com)
+[HTM,CSS](https://www.w3schools.com/html/)
+[Javascript](https://www.javascript.com)
 
 
-https://github.com/carefree2706/weatherforecast/blob/main/assets/weather%20forecast.mov
+
+
+
