@@ -22,8 +22,10 @@ Technologies utilised
 3. Javascript
 4. Bootstrap
 
-#1 construct with
+#H1 Construct with
 
 [API](https://openweathermap.org/api)
+[Jqurery] (https://api.jquery.com)
+
 
 https://github.com/carefree2706/weatherforecast/blob/main/assets/weather%20forecast.mov
