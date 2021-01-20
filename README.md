@@ -24,12 +24,16 @@ This assignment required the developer to create a weather forecast application 
 
 ## Construct with
 
-1.[API](https://openweathermap.org/api)(br)
-2.[Jqurery](https://api.jquery.com)(br)
-3.[HTM,CSS](https://www.w3schools.com/html/)(br)
+1.[API](https://openweathermap.org/api)
+2.[Jqurery](https://api.jquery.com)
+3.[HTM,CSS](https://www.w3schools.com/html/)
 4.[Javascript](https://www.javascript.com)
 
-[![IMAGE ALT TEXT HERE](https://github.com/carefree2706/weatherforecast/blob/main/assets/weather%20forecast.mov)
+##clip
+
+Below is the link when the user type in the country or city
+
+[![Watch the video](https://github.com/carefree2706/weatherforecast/blob/main/assets/weather%20forecast.mov)
 
 
 
