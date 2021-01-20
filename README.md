@@ -4,14 +4,14 @@ Summary
 
 This assignment required the developer to create a weather forecast application which seek for the current weather and future weather foercast for the city or cosuntry that we key in. The developer utilised the AJAX to attach or hook information through the openweather API and collect/ retrieve information. The application display the folllowing current and future forecast conditions:
 
-. Country
-. Date
-. Weather img 
-. Temperature
-. Wind speed
-. Uv index
-. 5 days forecast
-. Recent search history 
+1. Country
+2. Date
+3. Weather img 
+4. Temperature
+5. Wind speed
+6. Uv index
+7. 5 days forecast
+8. Recent search history 
 
 Technologies utilised
 
