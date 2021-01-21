@@ -33,7 +33,7 @@ This assignment required the developer to create a weather forecast application 
 
 Below is the link when the user type in the country or city
 
-![logo](assets.Screen Shot 2021-01-21 at 6.11.06 pm.png)
+#[logo](assets.Screen Shot 2021-01-21 at 6.11.06 pm.png)
 
 
 
